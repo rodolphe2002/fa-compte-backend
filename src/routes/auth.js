@@ -54,7 +54,7 @@ router.post(
         passwordHash,
       });
 
-      const base = process.env.FRONTEND_URL || 'http://localhost:3000';
+      const base = process.env.FRONTEND_URL;
       const loginUrl = `${base}/`;
       return res.status(201).json({
         user,
